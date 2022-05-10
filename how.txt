@@ -1,0 +1,8 @@
+div side: sidebar (index for all posts, will be it's own html file)
+index.html is just an introduction thingy + list of all articles (in order)
+
+article: actual post
+
+header: top bar
+
+footer: bottom bar
