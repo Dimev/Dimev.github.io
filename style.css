@@ -88,6 +88,11 @@ p {
 	margin: auto;
 	padding: 2em;
 	padding-top: 1rem;
+	/* TODO: add a container that does the padding for me instead*/
+		width: 100%;
+		/* Or, to account for your padding */
+		width: calc(100% - 4rem);
+	  
 	flex: 1;
 }
 
