@@ -1,3 +1,4 @@
+/* Base */
 body {
 	background-color: #111111;
 	min-height: 100vh;
@@ -21,61 +22,119 @@ footer {
 }
 
 article {
-	max-width: 600px;
+	max-width: 60rem;
 	margin: auto;
-	padding: 20px;
-	padding-top: 60px;
+	padding: 2rem;
+	padding-top: 4rem;
 	flex: 1;
 }
 
-.code {
-	padding: 10px;
-	border-radius: 10px;
-	background-color: #000000;
-}
-
 h1 {
-	font-size: 60px;
-	margin: 0px;
+	font-size: 4rem;
+	margin: 0rem;
 	color: white;
 	font-family: sans-serif;
 }
 
-.code h1 {
-	font-size: 16px;
-	margin: 0px;
-	color: #888888;
-	font-family: monospace;
-}
-
 h2 {
-	font-size: 30px;
+	font-size: 2rem;
 	color: lightgray;
 	font-family: sans-serif;
 }
 
-.code h2 {
-	font-size: 14px;
-	margin: 0px;
-	color: #aa6677;
-	font-family: monospace;
-}
-
 h3 {
-	font-size: 20px;
-	margin: 0px;
+	font-size: 2rem;
+	margin: 0rem;
 	color: lightgray;
 	font-family: sans-serif;
 }
 
 p {
-	font-size: 16px;
+	font-size: 1rem;
 	color: lightgray;
 	font-family: sans-serif;
 }
 
-.code p {
-	font-size: 14px;
+/* Special, code blocks */
+.code {
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: #000000;
+}
+
+.code h1 {
+	font-size: 1rem;
+	margin: 0rem;
+	color: #888888;
+	font-family: monospace;
+}
+
+.code h2 {
+	font-size: 0.9rem;
+	margin: 0rem;
 	color: #aa6677;
 	font-family: monospace;
 }
+
+.code p {
+	font-size: 1rem;
+	color: #aa6677;
+	font-family: monospace;
+}
+
+/* Special, home page */
+.post-area {
+	max-width: 50rem;
+	margin: auto;
+	padding: 2em;
+	padding-top: 1rem;
+	flex: 1;
+}
+
+.posts {
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+a.post:link, a.post:visited {
+	text-decoration: none;
+	color: white;
+	background-color: #000000;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+a.post:hover {
+	text-decoration: underline;
+	color: grey;
+	background-color: #000000;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+a.post:active {
+	text-decoration: underline;
+	color: white;
+	background-color: #000000;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+/* Special, home page article */
+.post h1 {
+	font-size: 1.5rem;
+}
+
+.post h3 {
+	font-size: 1rem;
+}
+
+/* Archive side panel */
+@media screen and (max-width: 400px) {
+	.navbar a {
+	  float: none;
+	  width: 100%;
+	}
+  }
+
